@@ -27,7 +27,7 @@ pipeline {
             steps {
                 echo 'Deploying to Vercel...'
                 // Add your deployment commands here, e.g., using Vercel CLI
-                bat 'npx vercel --prod --yes --token=%VERCEL_TOKEN%'
+                bat 'npx vercel . --prod --yes --token=%VERCEL_TOKEN%'
             }
         }
     }
